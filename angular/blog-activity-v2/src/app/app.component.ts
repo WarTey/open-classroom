@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
-import { Post } from './post';
+import { Component, OnInit } from '@angular/core';
+import { PostService } from './services/post.service';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-    posts: Post[] = [
-        new Post('Mon premier post', 'Content premier post', 0),
-        new Post('Mon deuxième post', 'Content deuxième post', 0),
-        new Post('Encore un post', 'Content dernier post', 0)
-    ];
+export class AppComponent implements OnInit {
+    posts: any[];
+
+    constructor(private postService: PostService) { }
+
+    ngOnInit() {
+        this.posts = this.postService.posts;
+    }
 }
