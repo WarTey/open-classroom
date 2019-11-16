@@ -1,4 +1,4 @@
-<div class="jumbotron mr-5 ml-5 border border-secondary">
+<div class="ml-5 mr-5 mt-3 list-group-item {{ getStatus() }}">
     <h2>{{ post.title }}</h2>
     <h6>{{ post.createdAt | date: 'short' }}</h6>
     <p>{{ post.content }}</p>

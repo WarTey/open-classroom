@@ -12,4 +12,8 @@ export class PostListItemComponentComponent implements OnInit {
     constructor() { }
 
     ngOnInit() { }
+
+    getStatus() {
+        return this.post.loveIts > 0 ? 'list-group-item-success' : this.post.loveIts < 0 ? 'list-group-item-danger' : null;
+    }
 }
