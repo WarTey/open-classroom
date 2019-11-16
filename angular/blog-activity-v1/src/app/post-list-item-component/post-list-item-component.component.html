@@ -1,1 +1,7 @@
-<p>post-list-item-component works!</p>
+<div class="jumbotron mr-5 ml-5 border border-secondary">
+    <h2>{{ post.title }}</h2>
+    <h6>{{ post.createdAt | date: 'short' }}</h6>
+    <p>{{ post.content }}</p>
+    <button type="button" class="btn btn-success mr-2">Love It!</button>
+    <button type="button" class="btn btn-danger">Don't Love It!</button>
+</div>
