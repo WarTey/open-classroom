@@ -19,4 +19,12 @@ export class PostService {
             createdAt: new Date()
         }
     ];
+
+    editLove(index: number, add: boolean) {
+        if (add) {
+            this.posts[index].loveIts += 1;
+        } else {
+            this.posts[index].loveIts -= 1;
+        }
+    }
 }

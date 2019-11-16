@@ -5,6 +5,7 @@ import {Component, Input, OnInit} from '@angular/core';
     templateUrl: './post-list-component.component.html',
     styleUrls: ['./post-list-component.component.css']
 })
+
 export class PostListComponentComponent implements OnInit {
     @Input() posts: any[];
 

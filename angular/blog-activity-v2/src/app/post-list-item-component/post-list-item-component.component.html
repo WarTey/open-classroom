@@ -2,6 +2,6 @@
     <h2>{{ post.title }}</h2>
     <h6>{{ post.createdAt | date: 'short' }}</h6>
     <p>{{ post.content }}</p>
-    <button type="button" (click)="postLove()" class="btn btn-success mr-2">Love It!</button>
-    <button type="button" (click)="postNoLove()" class="btn btn-danger">Don't Love It!</button>
+    <button type="button" (click)="postAddLove()" class="btn btn-success mr-2">Love It!</button>
+    <button type="button" (click)="postDelLove()" class="btn btn-danger">Don't Love It!</button>
 </div>

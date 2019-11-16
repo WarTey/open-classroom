@@ -6,6 +6,7 @@ import { PostService } from './services/post.service';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
+
 export class AppComponent implements OnInit {
     posts: any[];
 
