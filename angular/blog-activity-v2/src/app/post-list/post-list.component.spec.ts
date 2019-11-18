@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PostListComponentComponent } from './post-list-component.component';
+import { PostListComponentComponent } from './post-list.component';
 
 describe('PostListComponentComponent', () => {
   let component: PostListComponentComponent;
